@@ -10,3 +10,10 @@ Three access control are defined in cpp - private , protected and public
 8 - protected-private - if member is protected and derived class is calling base as private : then member is treated as private in the derived class.
 9 - protected-protected - if member is protected and derived class is calling bas as protected : then member is treated as protected in the derived class.
 10 -  private-anything - It is private everywhere.
+11 -  Pure abstract class can't be instantiated directly ( class with pure virtual function )
+12 - Private is valid over non static methods and variables. Static methods declared under private access modifier can still be accessed with class name.
+13 - Conversion to a private base class type is acceptable only for pointers to immediate derived classes (not further heirarchies). 
+
+
+
+Refer to link https://learn.microsoft.com/en-us/cpp/cpp/member-access-control-cpp?view=msvc-170
