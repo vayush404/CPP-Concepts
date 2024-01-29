@@ -1,0 +1,12 @@
+Three access control are defined in cpp - private , protected and public
+
+1 - private - If member is defined private : Only callable within the class it is declared and the friend class
+2 - protected - If member is defined protected : Callable within the class and also the dervied Hierarchy  and friend class, not from outside the class.
+3 - public - If member is defined public : Callable from anywhere
+4 - public-public - If member is public and derived class is calling base as public : then member is treated as public in the derived class.
+5 - public-private - if member is public and derived class is calling base as private : then member is treated as private in the derived class.
+6 - public-protected - if member is public and derived class is calling bas as protected : then member is treated as protected in the derived class.
+7 - protected-public - If member is protected and derived class is calling base as public : then member is treated as protected in the derived class
+8 - protected-private - if member is protected and derived class is calling base as private : then member is treated as private in the derived class.
+9 - protected-protected - if member is protected and derived class is calling bas as protected : then member is treated as protected in the derived class.
+10 -  private-anything - It is private everywhere.
